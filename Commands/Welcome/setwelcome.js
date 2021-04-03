@@ -13,13 +13,7 @@ if(!channel) return message.channel.send(`i ca'nt find this room`)
 await db.set(`welcome_${message.guild.id}`, channel.id)
 
 return message.channel.send(`The welcome channel was set successfully.`)
-
-
     
-
-
-
-
 };
 
 module.exports.help = {
