@@ -1,5 +1,3 @@
-
-
 const config = require("./config.js");
 const { prefix } = require('./config.js')
 const Discord = require("discord.js"), Client = new Discord.Client({ restTimeOffset: 10 }), CoolDowns = new Discord.Collection(), Fs = require("fs"), Ms = require("pretty-ms")
@@ -27,7 +25,7 @@ Categories.forEach((Category) => {
 Client.on("ready", async () => {
    console.clear();
    console.log(`Bot Is Ready To Play Music - ${Client.user.username}\nBot ID ${Client.user.id}`);
-   Client.user.setActivity(`${prefix}autorole`, { type: "PLAYING" });
+   Client.user.setActivity(`${prefix}setwelcome`, { type: "PLAYING" });
 });
 
 
